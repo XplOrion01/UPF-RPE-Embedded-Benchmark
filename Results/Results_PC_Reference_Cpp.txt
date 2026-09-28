@@ -1,5 +1,5 @@
 === UPF-RPE PC C++ REFERENCE ===                          
-Core structure: 5 Algebraic 4-DoF + 5 independent UKF workload slots + 1 Yuri-style UPF
+Core structure: 5 Algebraic 4-DoF + 5 independent UKF workload slots + 1 Yuri-sir-style UPF
 UPF initial grid: 32 particles (3 altitude bands: 2/4/2 azimuth bins, 4 heading bins)
 
 Initialization complete.
