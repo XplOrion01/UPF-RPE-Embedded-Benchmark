@@ -111,7 +111,7 @@ static V4 inc(const V4&a,const V4&b){double dx=b[0]-a[0],dy=b[1]-a[1];V4 u;doubl
 int main(){
     try {
         std::cout << "=== UPF-RPE PC C++ REFERENCE ===" << std::endl;
-        std::cout << "Core structure: 5 Algebraic 4-DoF + 5 independent UKF workload slots + 1 Yuri-style UPF" << std::endl;
+        std::cout << "Core structure: 5 Algebraic 4-DoF + 5 independent UKF workload slots + 1 Yuri-sir-style UPF" << std::endl;
         std::cout << "UPF initial grid: 32 particles (3 altitude bands: 2/4/2 azimuth bins, 4 heading bins)" << std::endl << std::endl;
 
         const double dt=0.05;
