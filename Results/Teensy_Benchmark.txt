@@ -1,0 +1,35 @@
+Teensy 4.1 results
+========================================================
+ UPF-RPE FULL WORKLOAD BENCHMARK (6 AGENTS PARALLEL)
+========================================================
+
+--- MEMORY & SPACE ANALYSIS (RAM FOOTPRINT) ---
+• 1x UPF Estimator (32 Particles): 16644 bytes
+• 5x Algebraic+UKF Trackers:      2600 bytes
+• Total Static RAM for 6 Agents:   19244 bytes (~18.79 KB)
+----------------------------------------------
+
+==================================================
+ Running Full Workload at: 10 Hz (Target dt = 0.100 s)
+ Workload: [5x Algebraic+UKF] + [1x UPF (32 particles)]
+==================================================
+-> Average Step Duration: 2.91 ms
+-> Time Window Budget:    100.00 ms
+-> Status: FEASIBLE (97.1 % Headroom)
+
+==================================================
+ Running Full Workload at: 20 Hz (Target dt = 0.050 s)
+ Workload: [5x Algebraic+UKF] + [1x UPF (32 particles)]
+==================================================
+-> Average Step Duration: 2.91 ms
+-> Time Window Budget:    50.00 ms
+-> Status: FEASIBLE (94.2 % Headroom)
+
+==================================================
+ Running Full Workload at: 30 Hz (Target dt = 0.033 s)
+ Workload: [5x Algebraic+UKF] + [1x UPF (32 particles)]
+==================================================
+==================================================
+-> Average Step Duration: 2.91 ms
+-> Time Window Budget:    33.33 ms
+-> Status: FEASIBLE (91.3 % Headroom)
