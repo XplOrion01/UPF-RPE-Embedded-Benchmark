@@ -1,5 +1,5 @@
 === UPF-RPE PC REFERENCE IMPLEMENTATION ===               
-Core structure: 5 Algebraic 4-DoF + 5 independent UKF placeholders + 1 Yuri-style UPF
+Core structure: 5 Algebraic 4-DoF + 5 independent UKF placeholders + 1 Yuri-sir-style UPF
 UPF particle grid: n_altitude=2 -> 3 latitude bands, n_azimuth=4, n_heading=4 => 32 particles
 [step   1] UPF best = [ 0.34150627 -0.09793282  2.10231386 -1.58441557] | particles=16
 [step  10] UPF best = [ 0.54747388 -0.47360535  1.91825041 -1.66429916] | particles=14
