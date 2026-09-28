@@ -1,0 +1,25 @@
+=== UPF-RPE PC C++ REFERENCE ===                          
+Core structure: 5 Algebraic 4-DoF + 5 independent UKF workload slots + 1 Yuri-style UPF
+UPF initial grid: 32 particles (3 altitude bands: 2/4/2 azimuth bins, 4 heading bins)
+
+Initialization complete.
+UPF particles created: 32
+Starting 200 cycles...
+
+[step   1] UPF best = [ 0.06291183 0.18986244 0.00195682 0.00074999 ] | particles=1
+[step  10] UPF best = [ 0.09935302 0.17632263 0.01856556 0.00749149 ] | particles=1
+[step  50] UPF best = [ 0.02607548 0.65517907 -0.72693733 0.03826335 ] | particles=1
+[step 100] UPF best = [ 0.47197016 0.72771636 -0.51435673 0.07596778 ] | particles=1
+[step 200] UPF best = [ 0.59505425 1.76990322 -0.00649166 0.11791070 ] | particles=1
+
+--- SUMMARY ---
+Cycles: 200 @ 20.00000000 Hz
+Algebraic estimators: 5
+Peer UKFs: 5
+UPF initial particles: 32
+UPF final active particles: 1
+Average cycle time: 0.139 ms
+Algebraic valid-solution updates: 960
+All states finite: YES
+NOTE: Standalone PC reference; no ROS, logging, or hardware I/O.
+NOTE: C++ least-squares uses normal equations for dependency-free compilation.

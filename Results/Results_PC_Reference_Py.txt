@@ -1,0 +1,19 @@
+=== UPF-RPE PC REFERENCE IMPLEMENTATION ===               
+Core structure: 5 Algebraic 4-DoF + 5 independent UKF placeholders + 1 Yuri-style UPF
+UPF particle grid: n_altitude=2 -> 3 latitude bands, n_azimuth=4, n_heading=4 => 32 particles
+[step   1] UPF best = [ 0.34150627 -0.09793282  2.10231386 -1.58441557] | particles=16
+[step  10] UPF best = [ 0.54747388 -0.47360535  1.91825041 -1.66429916] | particles=14
+[step  50] UPF best = [ 0.86053135 -2.0585481   0.48990456 -2.41593108] | particles=14
+[step 100] UPF best = [-1.58357567 -3.61975874 -0.31002012  0.67811785] | particles=14
+[step 200] UPF best = [-5.94661224 -0.85204796 -0.52101312 -1.01031562] | particles=4
+
+--- SUMMARY ---
+Cycles: 200 @ 20.0 Hz
+Algebraic estimators: 5
+Peer UKFs: 5
+UPF particles: 4
+Total UKF objects: 9
+Average cycle time: 67.409 ms
+Algebraic valid-solution updates: 0
+All states finite: YES
+NOTE: This is a standalone PC reference of the repository core. ROS, plotting, logging, and hardware I/O are intentionally removed.
