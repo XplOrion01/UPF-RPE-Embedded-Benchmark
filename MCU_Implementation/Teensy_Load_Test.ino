@@ -24,7 +24,7 @@
  * This is a RESOURCE / TIMING benchmark.
  *
  * It is NOT yet the final line-by-line C++ port
- * of Yuri's Python UPF-RPE implementation.
+ * of Yuri sir's Python UPF-RPE implementation.
  *
  * ============================================================
  */
@@ -396,7 +396,7 @@ public:
          * Lightweight embedded algebraic solve.
          *
          * Replace this with the complete translation of
-         * Yuri's AlgebraicMethod4DoF.find_relative_pose()
+         * Yuri sir's AlgebraicMethod4DoF.find_relative_pose()
          * in the final implementation.
          */
 
