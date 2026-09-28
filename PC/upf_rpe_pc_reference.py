@@ -42,7 +42,7 @@ def unscented_transform(sigmas,Wm,Wc,Q):
     return x,0.5*(P+P.T)
 
 class AlgebraicMethod4DoF:
-    """Core 4-DoF algebraic method copied in structure from Yuri's repository."""
+    """Core 4-DoF algebraic method copied in structure from Yuri sir's repository."""
     def __init__(self,d0,x_ha=None,sigma_uwb=0.1):
         self.eps=[1.0]; self.d=[float(d0)]; self.x_ha_0=np.zeros(4) if x_ha is None else np.array(x_ha,float)
         self.x_ha_odom=np.zeros((1,4)); self.x_ca_odom=np.zeros((1,4))
@@ -201,13 +201,13 @@ def local_increment(p0,p1,y0,y1):
 
 def main():
     print('=== UPF-RPE PC REFERENCE IMPLEMENTATION ===')
-    print('Core structure: 5 Algebraic 4-DoF + 5 independent UKF placeholders + 1 Yuri-style UPF')
+    print('Core structure: 5 Algebraic 4-DoF + 5 independent UKF placeholders + 1 Yuri-sir-style UPF')
     print('UPF particle grid: n_altitude=2 -> 3 latitude bands, n_azimuth=4, n_heading=4 => 32 particles')
     dt=.05; steps=200; sigma_uwb=.01
     initial_h=np.array([0.,0.,1.,0.]); initial_c=np.array([3.5,1.,2.,.3]); initial_range=float(np.linalg.norm(initial_c[:3]-initial_h[:3])); alg=[AlgebraicMethod4DoF(initial_range) for _ in range(5)]
     upf=UPFConnectedAgent(x_ha_0=np.zeros(4),sigma_uwb_factor=1.,resample_factor=.1,drift_correction_bool=True)
     upf.split_sphere_in_equal_areas(initial_range,sigma_uwb,2,4,4)
-    # The five peer UKFs are deliberately kept separate from the UPF. Yuri's repository does not define a
+    # The five peer UKFs are deliberately kept separate from the UPF. Yuri sir's repository does not define a
     # five-agent wrapper, so these are workload slots rather than a claim that five UKFs feed one UPF.
     peer=[TargetTrackingUKF(np.zeros(4),1.) for _ in range(5)]
     for p in peer:
