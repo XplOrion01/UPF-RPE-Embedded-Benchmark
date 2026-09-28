@@ -14,7 +14,7 @@
  *
  * IMPORTANT:
  * This benchmark is NOT yet the final line-by-line C++ port
- * of Yuri's Python UPF-RPE implementation.
+ * of Yuri sir's Python UPF-RPE implementation.
  */
 
 #include <Arduino.h>
