@@ -1,5 +1,4 @@
 # UPF-RPE-Embedded-Benchmark
-# UPF-RPE Embedded Benchmark
 
 Preliminary computational and resource feasibility study of a trimmed UPF-RPE
 (relative pose estimation) workload for embedded platforms.
@@ -102,23 +101,4 @@ Test frequencies include:
 
 ---
 
-## 4. Repository Structure
 
-```text
-UPF-RPE-Embedded-Benchmark/
-│
-├── README.md
-│
-├── PC/
-│   ├── upf_rpe_pc_reference.py
-│   ├── upf_rpe_pc_reference.cpp
-│   └── upf_rpe_pc_reference_printing.exe
-│
-├── ESP32S3/
-│   └── upf_rpe_esp32s3.ino
-│
-├── Teensy4.1/
-│   └── upf_rpe_teensy41.ino
-│
-└── results/
-    └── benchmark_results.md
