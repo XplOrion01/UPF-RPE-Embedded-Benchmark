@@ -183,7 +183,7 @@ static inline float norm3(
 // ALGEBRAIC 4DOF ESTIMATOR
 // ============================================================
 //
-// Structure follows Yuri's AlgebraicMethod4DoF:
+// Structure follows Yuri sir's AlgebraicMethod4DoF:
 //   - 4 DoF state
 //   - 10 measurement horizon
 //   - host odometry
@@ -342,7 +342,7 @@ public:
          * Lightweight embedded algebraic solve.
          *
          * The FINAL version will replace this section with
-         * the complete numerical translation of Yuri's
+         * the complete numerical translation of Yuri sir's
          * AlgebraicMethod4DoF.find_relative_pose().
          */
 
